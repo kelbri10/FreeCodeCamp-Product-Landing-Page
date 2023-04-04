@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet"> 
+
+    <link rel="stylesheet" href="style.css">
     <title>Product Landing Page</title>
 </head>
 <body>
@@ -12,18 +18,20 @@
 
         <nav id="primary-navigation">
             <ul>
-                <li><a href="#"></a>Features</li>
-                <li><a href="#"></a>How It Works</li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">How It Works</a></li>
                 <li><a href="#">Pricing</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1 id="form-header">Handcrafted, home-made masterpieces</h1>
-    <form action="">
-        <input type="email" name="email" id="email">
-        <input type="submit" value="Get Started" id="submit">
-    </form>
+    <section class="form-container">
+        <h1 id="form-header">Handcrafted, home-made masterpieces</h1>
+        <form id="contact" action="">
+            <input type="email" name="email" id="email" placeholder="Enter your email address">
+            <input type="submit" value="Get Started" id="submit">
+        </form>
+    </section>
 
     <section id="features">
         <ul id="feature-list">
@@ -54,20 +62,33 @@
 
     <section id="pricing">
         <div class="product-card">
+        
             <h3 class="product-title">Tenor Trombone</h3>
             <p class="product-price">$600</p>
             <p class="product-caption">Lorem ipsum</p>
+            <p class="product-caption">Lorem ipsum</p>
+            <p class="product-caption">Lorem ipsum dolor</p>
+            <p class="product-caption">Lorem ipsum</p>
             <button class="select">Select</button>
+           
+            
         </div>
         <div class="product-card">
             <h3 class="product-title">Bass Trombone</h3>
+
             <p class="product-price">$900</p>
+            <p class="product-caption">Lorem ipsum</p>
+            <p class="product-caption">Lorem ipsum</p>
+            <p class="product-caption">Lorem ipsum dolor</p>
             <p class="product-caption">Lorem ipsum</p>
             <button class="select">Select</button>
         </div>
         <div class="product-card">
             <h3 class="product-title">Valve Trombone</h3>
             <p class="product-price">$1200</p>
+            <p class="product-caption">Lorem ipsum</p>
+            <p class="product-caption">Lorem ipsum</p>
+            <p class="product-caption">Lorem ipsum dolor</p>
             <p class="product-caption">Lorem ipsum</p>
             <button class="select">Select</button>
         </div>
