@@ -1,2 +1,8 @@
-# FreeCodeCamp-Product-Landing-Page
-product landing page with CSS grid
+# Product Landing Page 
+
+## Project Description
+Based on the outlined guidelines in the Responsive Web Design FreeCodeCamp project, the goal is to create a responsive product landing page using CSS Grid, Flexbox, and a Mobile First design process.
+
+## Credits
+The design specs by FreeCodeCamp.
+Code written by Me.
