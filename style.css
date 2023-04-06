@@ -103,6 +103,10 @@ iframe{
 
 }
 
+.icon-show{
+    visibility: hidden; 
+}
+
 .feature-item{ 
     display: flex; 
     flex-direction: column; 
@@ -204,6 +208,22 @@ footer{
     margin-right: 1.5rem; 
 }
 
-/*media query for min-width: 600px to change nav bar from stacking to flex-end */
 
+/*media query for min-width: 600px to change nav bar from stacking to flex-end */
+@media only screen and (min-width: 600px){ 
+    .icon-show{ 
+        visibility: visible; 
+        margin: 2rem; 
+    }
+
+    .feature-item{ 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-evenly; 
+    }
+
+    /* .feature-caption{ 
+        text-align: left; 
+    } */
+}
 /*media query for min-width: 800px to change product cards from stacking to 3 columns */
