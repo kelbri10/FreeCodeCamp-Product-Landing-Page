@@ -5,23 +5,16 @@
 }
 
 body{ 
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
     display: flex; 
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
 }
 
-#form-header{ 
-    text-align: center;
-    font-size: 1.25rem; 
-    font-weight: 700; 
-    width: 400px; 
-
-}
-
 /*sticky nav*/
 #header{ 
+    text-align: center;
     position: sticky; 
     top: 0; 
     background-color: lightgray; 
@@ -31,22 +24,37 @@ body{
     
     margin-bottom: 1.5rem; 
 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+
 }
 
 #header-img{ 
     background-color: black; 
     
-    width: 500px; 
-    height: 400px; 
+    width: 4rem; 
+    height: 2rem; 
 }
+@media only screen and (min-width: 600px){ 
+    #header{
+        display: flex; 
+        flex-direction: row; 
+        /* align-items: center;  */
+        justify-content: space-evenly;
+    }
+}
+
 /*nav styling*/
 #primary-navigation ul{ 
     list-style-type: none; 
+    
 }
 
 #primary-navigation ul > li{ 
     margin: 0.5rem; 
-    text-align: center; 
+    /* text-align: center;  */
     line-height: 0.75rem; 
 }
 
@@ -55,7 +63,32 @@ body{
     color: black; 
 }
 
+@media only screen and (min-width: 700px){ 
+    #header{
+        display: flex; 
+        flex-direction: row; 
+        /* align-items: center;  */
+        justify-content: space-between;
+    }
+
+    #primary-navigation > ul{ 
+        font-size: 0.85rem; 
+        margin: 1.5rem; 
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-evenly;
+    }
+}
+
 /*form styling*/
+#form-header{ 
+    /* text-align: center; */
+    font-size: 1.25rem; 
+    font-weight: 600; 
+    /* width: 400px;  */
+
+}
+
 #contact{
     margin: 1rem; 
 
@@ -64,67 +97,102 @@ body{
     justify-content: center;
     align-items: center;
     gap: 1rem; 
-
     
 }
 
 #email{ 
-    width: 200px; 
+    width: 17rem; 
     padding: 0.25rem; 
 }
 
 #submit{ 
-    width: 150px; 
-    padding: 0.5rem;
+    height: 2rem; 
+    width: 9.5rem; 
     
     font-size: 1rem; 
     font-weight: 700; 
     text-transform: uppercase; 
+
 }
 
-iframe{ 
-    
-      
-}
 
 /* features styling */
 #feature-list{ 
     list-style-type: none; 
     
     margin-top: 5rem; 
+}
+
+.feature-item > i{ 
+    display: none; 
+}
+
+.feature-container{ 
+    /* max-width: 1000px;  */
     margin-bottom: 4rem; 
-    
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;  
-    align-items: center; 
-    
-    gap: 2rem;   
 
-}
-
-.icon-show{
-    visibility: hidden; 
-}
-
-.feature-item{ 
     display: flex; 
     flex-direction: column; 
-    /* justify-content: center;  */
+    justify-content: center; 
     align-items: center; 
+}
+
+.feature-caption{ 
+    text-align: center; 
+}
+
+@media only screen and (min-width: 600px){
+    .feature-item{ 
+       display: flex; 
+        /* display: flex;
+        justify-content: center;
+        align-items: center;  */
+    }
+    .feature-item > i{ 
+        display: block; 
+        
+        margin: 2rem;  
+    }
+    .feature-container{
+        
+        align-items: flex-start;
+    }
+    .feature-caption{ 
+        text-align: left; 
+    }
+}
+/* 
+.feature-title::before{
+    content:'ICON'; 
+    display: inline-block; 
+} */
+
+.feature-item{ 
+    /* display: flex; 
+    flex-direction: row; 
+    flex-flow: wrap; 
+    flex-grow: 1;
+     justify-content: flex-start;  
+    align-items: center;   */
    
 }
 
-.feature-title{ 
+/* .feature-container{ 
+   margin-left: 1rem; 
+    margin-right: 1rem; 
+} */
+
+/* .feature-title{ 
     font-weight: 600; 
 }
 
 .feature-caption{
-    text-align: center;  
-    margin-left: 1rem; 
-    margin-right: 1rem; 
+   
+    
     font-size: 0.95rem; 
-}
+} */
+
+
 /*product cards*/
 #pricing{ 
     margin-top: 3rem; 
@@ -211,8 +279,8 @@ footer{
 
 /*media query for min-width: 600px to change nav bar from stacking to flex-end */
 @media only screen and (min-width: 600px){ 
-    .icon-show{ 
-        visibility: visible; 
+    /* .icon-show{ 
+        
         margin: 2rem; 
     }
 
@@ -220,7 +288,7 @@ footer{
         display: flex; 
         flex-direction: row; 
         justify-content: space-evenly; 
-    }
+    } */
 
     /* .feature-caption{ 
         text-align: left; 
