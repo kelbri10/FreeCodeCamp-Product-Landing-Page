@@ -54,7 +54,6 @@ body{
 
 #primary-navigation ul > li{ 
     margin: 0.5rem; 
-    /* text-align: center;  */
     line-height: 0.75rem; 
 }
 
@@ -82,11 +81,8 @@ body{
 
 /*form styling*/
 #form-header{ 
-    /* text-align: center; */
     font-size: 1.25rem; 
     font-weight: 600; 
-    /* width: 400px;  */
-
 }
 
 #contact{
@@ -123,12 +119,12 @@ body{
     margin-top: 5rem; 
 }
 
-.feature-item > i{ 
+.icon-container > i{ 
     display: none; 
 }
 
 .feature-container{ 
-    /* max-width: 1000px;  */
+    
     margin-bottom: 4rem; 
 
     display: flex; 
@@ -144,17 +140,14 @@ body{
 @media only screen and (min-width: 600px){
     .feature-item{ 
        display: flex; 
-        /* display: flex;
-        justify-content: center;
-        align-items: center;  */
+       justify-content: center;
     }
-    .feature-item > i{ 
-        display: block; 
-        
+    .icon-container > i{ 
+        display: inline-block; 
+
         margin: 2rem;  
     }
     .feature-container{
-        
         align-items: flex-start;
     }
     .feature-caption{ 
