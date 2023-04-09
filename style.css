@@ -154,36 +154,8 @@ body{
         text-align: left; 
     }
 }
-/* 
-.feature-title::before{
-    content:'ICON'; 
-    display: inline-block; 
-} */
 
-.feature-item{ 
-    /* display: flex; 
-    flex-direction: row; 
-    flex-flow: wrap; 
-    flex-grow: 1;
-     justify-content: flex-start;  
-    align-items: center;   */
-   
-}
-
-/* .feature-container{ 
-   margin-left: 1rem; 
-    margin-right: 1rem; 
-} */
-
-/* .feature-title{ 
-    font-weight: 600; 
-}
-
-.feature-caption{
-   
-    
-    font-size: 0.95rem; 
-} */
+/* video formatting */
 
 
 /*product cards*/
