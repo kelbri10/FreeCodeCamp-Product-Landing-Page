@@ -2,6 +2,7 @@
     padding: 0; 
     margin: 0; 
     box-sizing: border-box;
+    
 }
 
 body{ 
@@ -10,15 +11,26 @@ body{
     flex-direction: column; 
     align-items: center; 
     justify-content: center; 
+   
 }
 
+.wrapper{ 
+    /* width: 1080px;  */
+
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+
+}
 /*sticky nav*/
 #header{ 
     text-align: center;
     position: sticky; 
     top: 0; 
     background-color: lightgray; 
-    width: 100%; 
+    max-width: 1080px; 
+    width: 100vw; 
     overflow: hidden;  
 
     
@@ -41,7 +53,6 @@ body{
     #header{
         display: flex; 
         flex-direction: row; 
-        /* align-items: center;  */
         justify-content: space-evenly;
     }
 }
@@ -83,6 +94,8 @@ body{
 #form-header{ 
     font-size: 1.25rem; 
     font-weight: 600; 
+
+    text-align: center; 
 }
 
 #contact{
@@ -113,10 +126,14 @@ body{
 
 
 /* features styling */
+
 #feature-list{ 
     list-style-type: none; 
     
-    margin-top: 5rem; 
+    margin-top: 5rem;  
+
+    max-width: 700px; 
+    width: 80vw; 
 }
 
 .icon-container > i{ 
@@ -156,31 +173,23 @@ body{
 }
 
 /* video formatting */
-
+iframe{ 
+    max-width: 560px;
+    height: 360px;  
+    width: 80vw; 
+}
 
 /*product cards*/
 #pricing{ 
     margin-top: 3rem; 
+    
 }
 .product-card{ 
-    /* padding: 1rem;  */
-    margin-bottom: 0.65rem; 
-
+    margin-bottom: 0.65rem;
     width: 300px;
-   
-    /* width: 265px; 
-    height: 250px; */
     border: 1px solid black; 
-
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: space-between; 
+    text-align: center; 
 }
-
-/* .product-info{ 
-    width: fit-content; 
-} */
 
 .product-price{ 
     font-size: 1.5rem; 
@@ -211,9 +220,29 @@ body{
     margin-bottom: 1rem; 
 }
 
+@media only screen and (min-width: 800px){ 
+    #pricing{ 
+         
+        margin: 1rem; 
+        display: flex; 
+        
+        flex-direction: row; 
+        justify-content: center;
+        align-items: center; 
+        gap: 1rem; 
+
+        width: 80%; 
+
+        
+    }
+
+   
+}
+/*footer styling */
+
 footer{ 
     background-color: lightgray; 
-    
+    max-width: 1080px;
     width: 100%; 
     overflow: hidden; 
     padding: 1rem; 
@@ -242,21 +271,3 @@ footer{
 }
 
 
-/*media query for min-width: 600px to change nav bar from stacking to flex-end */
-@media only screen and (min-width: 600px){ 
-    /* .icon-show{ 
-        
-        margin: 2rem; 
-    }
-
-    .feature-item{ 
-        display: flex; 
-        flex-direction: row; 
-        justify-content: space-evenly; 
-    } */
-
-    /* .feature-caption{ 
-        text-align: left; 
-    } */
-}
-/*media query for min-width: 800px to change product cards from stacking to 3 columns */
